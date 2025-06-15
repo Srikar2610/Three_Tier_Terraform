@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "bootcamp1-tf-state-dev"
-    key            = "global/terraform.tfstate"
+    bucket         = "srikar-terraform-backend"
+    key            = "3tier-infra/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "bootcamp1-terraform-lock-table-dev"
+    dynamodb_table = "terraform-locks"
     encrypt        = true
   }
 }
